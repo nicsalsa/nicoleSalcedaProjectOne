@@ -1,0 +1,235 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { 
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+}
+/* 
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
+ */
+ /* ----------GENERAL STYLES---------- */
+html {
+  font-size: 62.5%;
+}
+/* h1, h2, h3, h4, p {
+  margin: 0;
+} */
+h3 {
+  font-family: 'Playfair Display', serif; 
+  font-size: 4.8rem;
+}
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: normal;
+  letter-spacing: 3px;
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.4rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1.6rem;
+}
+img {
+  width: 100%;
+}
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ----------HEADER STYLES---------- */
+header {
+  background: url(../assets/home-1.jpeg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+/* navigation styles */
+nav {
+  background: #fff;
+  height: 10vh;
+  margin: 0 auto;
+}
+nav ul {
+  float:left;
+  width: 30%;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #999999;
+}
+h1 {
+  float: left;
+  width: 40%;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  margin: 0;
+}
+nav ul li {
+  float: left; 
+  list-style-type: none;
+  font-size: 1.4rem;
+}
+.navLeft li, .navRight li {
+  width: 33%;
+  padding: 30px 10px;
+}
+.navIcons a {
+  float: left;
+  width: 50%;
+}
+.navIcons i {
+  padding: 0 10px;
+}
+
+
+
+/* ----------ABOUT SECTION---------- */
+hr {
+  width: 10%;
+  margin-left: 0;
+  height: 5px;
+  background: black;
+  border-style: none;
+}
+.about {
+  background: #ededed;
+  margin: 0;
+  padding: 10% 0;
+}
+.aboutBleed {
+  /* width: 80%; */
+  margin: 0 auto;
+  position: relative;
+}
+.aboutBleed h4 {
+  padding-bottom: 5%;
+}
+.aboutBox {
+  width: 90%;
+  margin: 0 auto;
+}
+.aboutPhoto {
+  width: 40%;
+  border: solid white 10px;
+  float: left;
+  position: relative;
+}
+.aboutPhoto img:last-child {
+  width: 60%;
+  position: absolute;
+  bottom: -25%;
+  left: -32%;
+}
+.aboutContent {
+  float: left;
+  width: calc(60% - 50px);
+  margin-left: 50px;
+  /* padding: 0 0 3% 3%; */
+}
+.aboutContent h3 {
+  margin-bottom: 20px;
+  font-size: 4.8rem;
+}
+.aboutContent p {
+  line-height: 2;
+  color: #999999;
+}
+.aboutContent strong {
+  color: black;
+}
+.aboutContentAuthor {
+ margin: 2rem 0;
+}
+/* ----------DESCRIPTION SECTION---------- */
+.descriptionContent, .descriptionFigure {
+  float: left;
+}
+.descriptionContent {
+  width: 65%;
+  padding: 7rem 5rem 2rem 10rem;
+}
+.descriptionFigure {
+  width: 35%;
+}
+      /* benefits section */
+ul.half {
+  float:left;
+  width: 50%;
+  margin: 0;
+}
+li.benefit {
+  list-style: none;
+  color: #999999;
+  padding-bottom: 4rem;
+  line-height: 1.9;
+}
+.benefit h4 {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 0;
+  padding-bottom: 1rem;
+}
+/* .benefitIcon {
+  float:left;
+  font-size: 3.6rem;
+  display: block;
+  width: 10%;
+} */
+.benefitItem {
+  float: left;
+  width: 80%;
+  margin-left: 10px;
+  text-align: left;
+}
+.benefitItem p {
+  font-size: 1.3rem;
+}
+.descriptionContent div.benefitItem::before {
+  position: relative;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Free";
+}
+div.benefitItem:nth-of-type(1)::before {
+  position: absolute;
+  left: 8rem;
+  content: '\f0f3';
+ 
+}
+
+
+
+
+/* ----------TESTIMONIALS---------- */
+
+
+
+
+/* ----------GALLERY SECTION---------- */
+
+
+/* ----------CONTACT SECTION---------- */
+
+
+/* ----------FOOTER STYLES----------- */
