@@ -17,12 +17,12 @@ html {
   font-size: 62.5%;
 }
 h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-family: 'Playfair Display', serif;
 }
 h3 {
   font-family: 'Playfair Display', serif; 
-  font-size: 4.8rem;
+  font-size: 4rem;
 }
 h4 {
   text-align: center;
@@ -30,23 +30,23 @@ h4 {
   color: #999999;
   font-weight: bold;
   letter-spacing: 3px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
-p {
+/* p {
   font-size: 1.4rem;
-}
+} */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif; 
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 img {
   width: 100%;
 }
 .wrapper {
   max-width: 800px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -166,11 +166,12 @@ hr {
   float: left;
 }
 .descriptionContent {
-  width: 65%;
-  padding: 7rem 5rem 2rem 10rem;
+  width: 60%;
+  /* padding: 7rem 5rem 2rem 10rem; */
 }
+
 .descriptionFigure {
-  width: 35%;
+  width: 40%;
 }
       /* benefits section */
 ul.half {
@@ -181,7 +182,7 @@ ul.half {
 li.benefit {
   list-style: none;
   color: #999999;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
   line-height: 1.9;
 }
 .benefit h4 {
@@ -193,20 +194,20 @@ li.benefit {
 }
 .benefitItem {
   float: left;
-  width: 80%;
-  margin-left: 10px;
+  width: 100%;
+  /* margin-left: 10px; */
   text-align: left;
 }
 .benefitItem p {
   font-size: 1.3rem;
 }
-div.benefitItem::before {
+/* div.benefitItem::before {
   position: relative;
   font-weight: 900;
   left: 8rem;
   font-size: 2rem;
   font-family: "Font Awesome 5 Free";
-}
+} */
 /* div.benefitItem:nth-of-type(1)::before {
   position: absolute;
   content: '\f072';
@@ -215,9 +216,9 @@ div.benefitItem:nth-of-type(2)::before {
   position: absolute;
   content: '\f0f3';
 } */
-.descriptionContent li.benefit:nth-of-type(1)::before {
+/* .descriptionContent li.benefit:nth-of-type(1)::before {
   border: 1px red solid;
-}
+} */
 
 
 
@@ -229,7 +230,7 @@ div.benefitItem:nth-of-type(2)::before {
   clear:both;
   text-align: center;
   background: #ededed;
-  padding: 10%;
+  padding: 10% 0 5%;
   background-image: url(../assets/pattern.png);
 }
 .testimonialBubble {
@@ -242,10 +243,22 @@ div.benefitItem:nth-of-type(2)::before {
 .testimonial h2 {
   font-size: 6rem;
   font-family: 'Playfair Display', serif;
+  padding-top: 2.5rem;
 }
 blockquote {
   width: 80%;
-  text-align: center;
+  margin: 0 auto;
+  padding: 5rem 0 2.5rem;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  line-height: 2;
+  color: #999999; 
+}
+.fa-star {
+  color: gold;
+}
+.testimonial p span {
+  color: black;
 }
 
 
@@ -255,6 +268,7 @@ blockquote {
   background-image: url(../assets/pattern.png);
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 5rem;
 }
 .gallery figure {
   float: left;
@@ -268,16 +282,42 @@ blockquote {
 /* ----------CONTACT SECTION---------- */
 .contact {
   background-color: white;
+  line-height: 2;
 }
-.contact div {
+figure.contactPhoto {
   float: left;
-}
-.contact div:first-child {
   width: 55%;
 }
-.contact div:nth-child(2) {
+.contactInfo {
   width: 45%;
-  padding-left: 10rem;
+  float: right;
+  /* border: 1px solid green; */
+  padding: 50px;
+}
+.innerContactInfo {
+  /* border: 1px solid red; */
+  width: 62.5%;
+}
+.innerContactInfo h4 {
+  /* padding-top: 5rem; */
+  text-align: left;
+}
+.innerContactInfo p {
+  color: #666;
+}
+.innerContactInfo p:nth-child(3), .innerContactInfo div p:nth-of-type(2) {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  padding: 3rem 0 2.5rem;
+}
+.innerContactInfo p span, .innerContactInfo div p:nth-of-type(2) {
+  color:black;
+  font-weight: bold;
+  padding: 0;
+}
+.contactEmail {
+  padding: 2rem 0;
 }
 
 /* ----------FOOTER STYLES----------- */
