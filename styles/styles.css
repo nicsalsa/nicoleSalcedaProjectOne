@@ -148,7 +148,8 @@ hr {
   margin-left: 50px;
 }
 .aboutContent h3 {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  padding-right: 5%; 
 }
 .aboutContent p {
   line-height: 2;
@@ -166,7 +167,7 @@ hr {
 }
 .descriptionContent {
   width: 65%;
-  padding: 7rem 0 0 18rem;
+  padding: 7rem 0 0 19rem;
 }
 .descriptionFigure {
   width: 35%;
@@ -238,18 +239,19 @@ li.benefit {
 .testimonialBubble {
   background: white;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 5rem 2rem;
  
 }
 .testimonial h2 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: 'Playfair Display', serif;
   padding-top: 2.5rem;
 }
 blockquote {
   width: 70%;
+  font-size: 1.6rem;
   margin: 0 auto;
-  padding: 5rem 0 2.5rem;
+  padding: 3rem 0 2.5rem;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   line-height: 2;
@@ -266,7 +268,8 @@ blockquote {
   background-image: url(../assets/pattern.png);
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
+  line-height: 2.5;
 }
 .gallery figure {
   float: left;
@@ -321,7 +324,7 @@ figure.contactPhoto {
 footer {
   background-color: black;
   color: grey;
-  height: 50vh;
+  height: 30vh;
 }
 .footerGrid {
   padding: 5rem 0;
@@ -332,6 +335,7 @@ footer ul, footer form {
 }
 footer li {
   list-style-type: none;
+  padding: 5px 0;
 }
 footer a {
   text-decoration: none;
@@ -341,33 +345,47 @@ footer a:hover {
   color: white;
 }
 /* FOOTER FORM STYLE */
-.formInput {
-  width: 100%;
+footer form {
+  border-bottom: 1px solid grey;
+  width: 40%;
+}
+.formInput input, .formInput a {
+  float: left;
 }
 .formInput input {
   background: black;
   border: none;
-  border-bottom: 1px solid grey;
+  /* border-bottom: 1px solid grey; */
   color: grey;
-  padding: 10px 0;
-  width: 100%;
+  padding: 5px 0;
+  width: 95%;
+}
+.formInput a {
+  width: 5%;
+  font-size: 1.6rem;
+  position: relative; 
 }
 
 /* COPYRIGHT FOOTER */
-.copyright {
+.copyrightSection {
   clear:both;
   position: relative;
-  width: 100%;
   padding: 20px 0;
+  background: black;
+}
+.copyright {
   border-top: 1px solid grey;
+  padding: 10px 0;
 }
 .copyright p {
   float: left;
+  color: grey;
 }
-
 .copyright div {
   float: right;
 }
 .copyright a {
   margin-left: 20px;
+  text-decoration: none;
+  color: grey;
 }
