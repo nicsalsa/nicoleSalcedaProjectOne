@@ -12,29 +12,34 @@
 </head>
 <body>
       <!-- Beginning of HEADER -->
-      <header>
+      <header class="headerBlog">
             <nav>
-                  <div class="wrapper">
-                        <ul class="clearfix navLeft">
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">About</a></li>
-                              <li><a href="#">Reserve</a></li>
-                        </ul>
-                        <h1><a href="#">Sunshine</a></h1>
-                        <ul class="clearfix navRight">
-                              <li><a href="#">Blog</a></li>
-                              <li><a href="#">Contact</a></li>
-                              <li class="navIcons">
-                                    <a href="#"><i class="fas fa-search"></i></a>
-                                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
-                              </li>
-                        </ul>
-                  </div>
+               <div class="wrapper">
+                     <ul class="clearfix navLeft">
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Reserve</a></li>
+                     </ul>
+                     <h1><a href="#">Sunshine</a></h1>
+                     <ul class="clearfix navRight">
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Contact</a></li>
+                           <li class="navIcons clearfix">
+                              <a href="#"><i class="fas fa-search"></i></a>
+                              <a href="#">
+                                 <i class="fas fa-shopping-bag"></i>
+                                 <div class="circle">
+                                    <p>2</p>
+                                 </div>
+                              </a>
+                           </li>   
+                     </ul>
+               </div>
             </nav>
       </header>
       <!-- END of HEADER -->
       <!-- beginning of ABOUT -->
-      <section class="about">
+      <section class="about" id="about">
             <div class="aboutBleed wrapper">
                   <div>
                         <h4>A little about me</h4>
@@ -155,7 +160,7 @@
       </section>
 <!-- GALLERY SECTION ENDS -->
 <!-- CONTACT SECTION BEGINS -->
-      <section class="contact clearfix">
+      <section class="contact clearfix" id="reserve">
             <figure class="contactPhoto">
                   <img src="assets/home-10.jpeg" alt="landscape view of the beach and palm trees">
             </figure>
