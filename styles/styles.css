@@ -428,6 +428,8 @@ header.headerBlog {
   /* width: 80%; */
   background: white;
   padding: 10rem 0;
+  position: relative;
+  bottom: 75px;
 }
 .blogWrapper {
   width: 90%;
@@ -640,6 +642,10 @@ article.comment1 figure, article.comment2 figure {
 .formSection {
   padding: 3rem 0;
 }
+.formSection p:nth-child(2) {
+  padding: 3rem 0 6rem;
+  color: #999;
+}
 .commentForm input, .commentForm textarea {
   border: none;
   border-bottom: 1px solid #999;
@@ -649,9 +655,11 @@ article.comment1 figure, article.comment2 figure {
   width: calc(33.33% - 5px);
   margin-right: 5px;
   padding-top: 2rem;
+  letter-spacing: 1.5px;
 }
-.commentForm input:hover a {
-  border-bottom: 1px solid black;
+.commentForm input:hover {
+  border-bottom: 2px solid black;
+  color: black;
 }
 form .commentForm input:nth-of-type(3), .commentForm input:nth-of-type(4) {
   margin-right: 0;
@@ -660,6 +668,7 @@ textarea {
   padding: 2rem 0;
   width: 100%;
   resize: none;
+  letter-spacing: 1.5px;
 }
 input.formSubmit {
   display: block;
@@ -672,12 +681,63 @@ input.formSubmit {
   color: white;
   letter-spacing: 2px;
 }
+input.formSubmit:hover {
+  background: rgba(132, 160, 22, 0.8);
+}
+.formSubmitContact {
+  display: block;
+  margin: 3rem 0;
+  padding: 1rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
+}
+.formSubmitContact:hover {
+  background: white;
+}
 
 /* ---FORM SECTION ENDS--- */
 
 /* ---------------------------CONTACT PAGE STYLES--------------------- */
 .contactHeader {
   background: url(../assets/contact-1.jpeg) fixed center no-repeat;
+}
+.contactDetails h3 {
+  padding: 3rem 0 2rem;
+}
+.contactDetails p {
+  width: 60%;
+  padding-bottom: 3rem;
+}
+.iconColumns {
+  width: 95%;
+  margin: 0 auto;
+}
+.iconColumns li {
+  float:left;
+  display: inline-block;
+  height: 200px;
+  list-style-type: none;
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 3rem 0;
+}
+.iconColumns li p {
+  font-size: 1.2rem;
+  color: #999;
+  padding: 0;
+  width: 100%;
+}
+.iconColumns li i {
+  font-size: 4rem;
+}
+.iconColumns h4 {
+  text-align: left;
+}
+.phoneCol, .addressCol {
+  border-right: 1px solid #999;
 }
 
 
