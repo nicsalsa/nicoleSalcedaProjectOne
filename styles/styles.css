@@ -49,8 +49,8 @@ img {
 }
 /* ----------INDEX PAGE STYLES */
 /* ----------HEADER STYLES---------- */
-header {
-  /* background: url(../assets/home-1.jpeg) no-repeat fixed; */
+header.headerIndex {
+  background: url(../assets/home-1.jpeg) no-repeat fixed;
   background-size: cover;
   height: 100vh;
   margin: 0;
@@ -412,11 +412,15 @@ footer form {
   text-decoration: none;
   color: grey;
 }
+.copyright a:hover {
+  color: white;
+}
 /* --------END OF INDEX STYLES */
 /* --------BLOG PAGE STYLES ---------- */
 header.headerBlog {
   background: url(../assets/blog-1.jpeg) no-repeat fixed center;
   background-size: cover;
+  height: 100vh;
 }
 .mainBlog {
   background: #eee;
@@ -703,6 +707,7 @@ input.formSubmit:hover {
 /* ---------------------------CONTACT PAGE STYLES--------------------- */
 .contactHeader {
   background: url(../assets/contact-1.jpeg) fixed center no-repeat;
+  height: 100vh;
 }
 .contactDetails h3 {
   padding: 3rem 0 2rem;
@@ -714,6 +719,7 @@ input.formSubmit:hover {
 .iconColumns {
   width: 95%;
   margin: 0 auto;
+  /* border: 1px solid red; */
 }
 .iconColumns li {
   float:left;
@@ -722,7 +728,8 @@ input.formSubmit:hover {
   list-style-type: none;
   width: calc(33.33% - 20px);
   margin: 10px;
-  padding: 3rem 0;
+  padding: 3rem 0 3rem 2em;
+  /* border: 1px green solid; */
 }
 .iconColumns li p {
   font-size: 1.2rem;
@@ -735,6 +742,12 @@ input.formSubmit:hover {
 }
 .iconColumns h4 {
   text-align: left;
+  color: black;
+  font-family: 'Playfair Display', serif;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-size: 2rem;
+  padding: 2rem 0;
 }
 .phoneCol, .addressCol {
   border-right: 1px solid #999;
